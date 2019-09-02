@@ -1,68 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Grid Calendar</title>
-    <meta name="description" content="" />
-
-    <link rel="stylesheet" href="./CSSGridCalendar.css" />
-    <style>
-        body { font-family: sans-serif; }
-    </style>
-</head>
-<body>
-
-    <div class="calendar">
-        <!-- Highlights -->
-        <div class="highlight-day tuesday"></div>
-        <div class="current-time from-1pm" style="top: 25%"></div>
-
-        <!-- Time labels -->
-        <div class="time from-8am">8am</div>
-        <div class="time from-9am">9am</div>
-        <div class="time from-10am">10am</div>
-        <div class="time from-11am">11am</div>
-        <div class="time from-noon">Noon</div>
-        <div class="time from-1pm">1pm</div>
-        <div class="time from-2pm">2pm</div>
-        <div class="time from-3pm">3pm</div>
-        <div class="time from-4pm">4pm</div>
-        <div class="time from-5pm">5pm</div>
-        <div class="time from-6pm">6pm</div>
-        <div class="time from-7pm">7pm</div>
-        <div class="time from-8pm">8pm</div>
-
-        <!-- Weekday labels -->
-        <div class="weekday"></div>
-        <div class="weekday monday">Monday</div>
-        <div class="weekday tuesday"><strong>Tuesday</strong></div>
-        <div class="weekday wednesday">Wednesday</div>
-        <div class="weekday thursday">Thursday</div>
-        <div class="weekday friday">Friday</div>
-        <div class="weekday thursday">Saturday</div>
-        <div class="weekday friday">Sunday</div>
-        
-        <!-- Events -->
-        <div class="event monday from-10am to-noon">Meeting</div>
-        <div class="event wednesday from-9am to-11am">Meeting</div>
-        
-        <div class="event" data-weekday="thursday" data-start="1pm" data-end="2pm">Quick meeting</div>
-        <div class="event" data-weekday="tuesday" data-start="2pm" data-end="6pm">Long meeting</div>
-
-        <div class="event monday from-noon to-1pm">Lunch</div>
-        <div class="event tuesday from-noon to-1pm">Lunch</div>
-        <div class="event wednesday from-noon to-1pm">Lunch <br /> at Google <br /> with Steve <br /></div>
-        <div class="event thursday from-noon to-1pm">Lunch</div>
-        <div class="event friday from-noon to-1pm">Lunch</div>
-        <div class="event thursday from-noon to-1pm">Lunch</div>
-        <div class="event friday from-noon to-1pm">Lunch</div>
-
-        <div class="event-group thursday from-3pm to-5pm">
-            <div class="event">Meeting</div>
-            <div class="event">Meeting</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>LSW - Event Schedule</title>
+  </head>
+  <body>
+    <div class="timetable">
+      <div class="week-names">
+        <div>monday</div>
+        <div>tuesday</div>
+        <div>wednesday</div>
+        <div>thursday</div>
+        <div></div>
+        <div>friday</div>
+        <div class="weekend">saturday</div>
+      </div>
+      <div class="time-interval">
+        <div>9:00 - 11:00</div>
+        <div>11:00 - 13:00</div>
+        <div>13:00 - 15:00</div>
+        <div>15:00 - 17:00</div>
+        <div>17:00 - 19:00</div>
+        <div>19:00 - 22:00</div>
+      </div>
+      <div class="content">
+        <!-- Monday -->
+        <div class="nasa">
+          
         </div>
-
+        <!-- Tuesday -->
+        <div>
+          <strong>The Female Designer Movement</strong> <br />
+          Venue - Facebook NGHUB <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Wednesday -->
+        <div></div>
+        <!-- Thursday -->
+        <div>
+          <strong>Innovation Tour</strong> <br />
+          Venue - Open to all <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <div></div>
+        <!-- Friday -->
+        <div>
+          <div class="accent-green-gradient"></div>
+        </div>
+        <!-- Saturday -->
+        <div class="weekend"></div>
+        <!-- New Row (Lunch) -->
+        <!-- Monday -->
+        <div class="join-up nasa"></div>
+        <!-- Tuesday -->
+        <div>
+          <strong>For Design Service Businesses</strong><br />
+          <strong>Speakers</strong> - Coker Oluwafemi, Tamara doubrah Ogunuku,
+          and Seyi Da-Design <br />
+          <strong>Venue</strong> - Facebook NGHUB <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Wednesday -->
+        <div>
+          <strong>Naija Startups</strong> <br />
+          <strong>Venue</strong> - Allianz <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Thursday -->
+        <div></div>
+        <div class="down">
+          <strong>TedX Yaba</strong>
+        </div>
+        <!-- Friday -->
+        <div>
+          <strong>TechCabal Mobility TownHall</strong><br />
+          <strong>Venue</strong> - Zone Tech Park <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Saturday -->
+        <div class="weekend">
+          <!-- <strong>FCMB AgrTech Incubation Program</strong><br/>
+            <a href="#" target="_blank">Register Here</a> -->
+        </div>
+        <!-- New Row (Mid Afternoon) -->
+        <!-- Monday -->
+        <div class="down nasa join-up">
+            <strong>Opening Ceremony</strong>
+        </div>
+        <!-- Tuesday -->
+        <div>
+          <strong>Money Africa - Personal Finance</strong><br />
+          <strong>Venue</strong> - Facebook NGHUB <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Wednesday -->
+        <div>
+          <div class="accent-purple-gradient"></div>
+        </div>
+        <!-- Thursday -->
+        <div>
+          <strong>Developer Event</strong><br />
+          <strong>Venue</strong> - Decagon HQ <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <div class="join-up">
+          <strong>Venue</strong> - Facebook + Open<br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Friday -->
+        <div></div>
+        <!-- Saturday -->
+        <div class="weekend"></div>
+        <!-- New Row (Afternoon) -->
+        <!-- Monday -->
+        <div class="join-up nasa">
+            Venue - Allianz <br />
+            <a
+              href="https://www.eventbrite.com/e/day-1-lagos-startup-week-2019-opening-kick-off-event-tickets-63464278365?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text"
+              target="_blank"
+              >Register Here</a>
+        </div>
+        <!-- Tuesday -->
+        <div>
+          <strong>Legal Masterclass</strong><br />
+          <strong>Venue</strong> - Facebook NGHUB <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Wednesday -->
+        <div>
+          <strong>Founders & Funders</strong><br />
+          <br />
+          <strong>Doing Business with Big Business</strong><br />
+          <strong>Venue</strong> - Allianz <br />
+          <strong>Speakers</strong> - Africa's Talking <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Thursday -->
+        <div></div>
+        <div class="down nasa"><strong>Nasa Space Apps</strong><br /></div>
+        <!-- Friday -->
+        <div></div>
+        <div class="weekend"></div>
+        <!-- New Row (Evening) -->
+        <!-- Monday -->
+        <div class="join-up nasa">
+        </div>
+        <!-- Tuesday -->
+        <div></div>
+        <!-- Wednesday -->
+        <div>
+          <strong>Women who Launch</strong><br />
+          <strong>Venue</strong> - Allianz <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Thursday -->
+        <div>
+          <strong>Discover 10 New Startups</strong><br />
+          <strong>Host</strong> - Union Bank <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <div class="join-up nasa">
+          <strong>Venue</strong> - Facebook + Open <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Friday -->
+        <div></div>
+        <!-- Saturday -->
+        <div class="weekend"></div>
+        <!--New Row (Late)-->
+        <!-- Monday -->
+        <div class="join-up nasa"></div>
+        <!-- Tuesday -->
+        <div></div>
+        <!-- Wednesday -->
+        <div>
+          <strong>Fireside with Akin Alabi</strong><br />
+          <strong>Venue</strong> - Allianz <br />
+          <a href="#" target="_blank">Register Here</a>
+        </div>
+        <!-- Thursday -->
+        <div></div>
+        <div></div>
+        <!-- Friday -->
+        <div></div>
+        <!-- Saturday -->
+        <div class="weekend"></div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
