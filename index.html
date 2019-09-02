@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grid Calendar</title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./CSSGridCalendar.css" />
+    <style>
+        body { font-family: sans-serif; }
+    </style>
+</head>
+<body>
+
+    <div class="calendar">
+        <!-- Highlights -->
+        <div class="highlight-day tuesday"></div>
+        <div class="current-time from-1pm" style="top: 25%"></div>
+
+        <!-- Time labels -->
+        <div class="time from-8am">8am</div>
+        <div class="time from-9am">9am</div>
+        <div class="time from-10am">10am</div>
+        <div class="time from-11am">11am</div>
+        <div class="time from-noon">Noon</div>
+        <div class="time from-1pm">1pm</div>
+        <div class="time from-2pm">2pm</div>
+        <div class="time from-3pm">3pm</div>
+        <div class="time from-4pm">4pm</div>
+        <div class="time from-5pm">5pm</div>
+        <div class="time from-6pm">6pm</div>
+        <div class="time from-7pm">7pm</div>
+        <div class="time from-8pm">8pm</div>
+
+        <!-- Weekday labels -->
+        <div class="weekday"></div>
+        <div class="weekday monday">Monday</div>
+        <div class="weekday tuesday"><strong>Tuesday</strong></div>
+        <div class="weekday wednesday">Wednesday</div>
+        <div class="weekday thursday">Thursday</div>
+        <div class="weekday friday">Friday</div>
+        <div class="weekday thursday">Saturday</div>
+        <div class="weekday friday">Sunday</div>
+        
+        <!-- Events -->
+        <div class="event monday from-10am to-noon">Meeting</div>
+        <div class="event wednesday from-9am to-11am">Meeting</div>
+        
+        <div class="event" data-weekday="thursday" data-start="1pm" data-end="2pm">Quick meeting</div>
+        <div class="event" data-weekday="tuesday" data-start="2pm" data-end="6pm">Long meeting</div>
+
+        <div class="event monday from-noon to-1pm">Lunch</div>
+        <div class="event tuesday from-noon to-1pm">Lunch</div>
+        <div class="event wednesday from-noon to-1pm">Lunch <br /> at Google <br /> with Steve <br /></div>
+        <div class="event thursday from-noon to-1pm">Lunch</div>
+        <div class="event friday from-noon to-1pm">Lunch</div>
+        <div class="event thursday from-noon to-1pm">Lunch</div>
+        <div class="event friday from-noon to-1pm">Lunch</div>
+
+        <div class="event-group thursday from-3pm to-5pm">
+            <div class="event">Meeting</div>
+            <div class="event">Meeting</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
